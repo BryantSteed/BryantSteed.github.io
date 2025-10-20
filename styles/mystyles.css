@@ -1,0 +1,146 @@
+/* <!-- Joseph Steed, IS 201
+            Last edited: 2019 Apr 19
+    -->*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #383f41;
+    background-color: rgb(200, 226, 236);
+}
+h3,h4 {
+    color: rgb(19, 17, 17);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkTitle {
+    color: aliceblue;
+}
+.myList {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: normal;
+}
+a {
+    color: rgb(50, 50, 61);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    /* font-weight: bold; */
+}
+/* after a link has been visited */
+/* a:visited { 
+    text-decoration: ;
+} */
+/* custom class */ 
+.resumeListHeading {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.resumeListSubHeading {
+    font-weight: normal;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+.justify {
+    text-align: justify;
+}
+.homeBackGround {
+    background-image: url('/Images/computerBackground2.jpg');
+    background-position: top right;
+    background-repeat: repeat;
+}
+
+/* padding, border and margin. This is the issue with box styles */
+.box1 {
+border-width: 1px;
+border-style: solid;
+border-color: aqua;
+border-bottom: dotted aqua;
+}
+.box2 {
+    padding: 4px;
+}
+.box3 {
+    margin: 30px;
+}
+.box4 {
+    padding-left: 10px;
+    margin: 100px;
+    border-right: solid 5px blue;
+}
+
+.common 
+{
+    /* background-color: #cccccc; */
+    /* border: solid 2px white; */
+    position: absolute;
+}
+.header 
+{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+    /* zindex says the order things should be 
+    on a page. The higher the number, the 
+    higher the priority */
+    z-index: 2; 
+    border-bottom: solid 1px #555555;
+}
+.leftmenu {
+    top: 114px;
+    left: 5px;
+    width: 100px;
+    bottom: 64px;
+    z-index: 1;
+    padding-top: 35px;
+    border-right: solid 1px #555555;
+}
+.mainbody {
+    top: 114px;
+    left: 114px;
+    right: 114px;
+    bottom: 64px;
+    padding-right: 5px;
+}
+.rightmenu {
+    top: 114px;
+    right: 5px;
+    width: 100px;
+    bottom: 64px;
+    border-left: solid 1px #555555;
+    padding-left: 5px;
+    
+}
+.footer {
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    height: 10px;
+    font-size: 8px;
+    text-align: center;
+    position: fixed;
+}
+
+.subheader {
+    float: right;
+}
+
+.italicize {
+    font: italic;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+  }

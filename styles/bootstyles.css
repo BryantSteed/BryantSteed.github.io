@@ -1,0 +1,161 @@
+/* Joseph Steed, IS 201
+            Last edited: 2019 Apr 19
+    */
+.position 
+{
+    /* background-color: #cccccc; */
+    /* border: solid 2px white; */
+    position: absolute;
+}
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #dfe9f0;
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.header 
+{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: fit-content;
+    /* zindex says the order things should be 
+    on a page. The higher the number, the 
+    higher the priority */
+    z-index: 2; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #dfe9f0;
+}
+
+.leftmenu {
+    /* For padding purposes only*/
+    top: 114px;
+    left: 5px;
+    width: 100px;
+    bottom: 50px;
+    z-index: 1;
+    padding-top:105px;
+
+}
+.rightmenu {
+    /* For padding purposes only */
+    top: 114px;
+    right: 5px;
+    width: 100px;
+    bottom: 50px;
+    padding-top: 105px;
+    z-index: 1;
+}
+.mainbody {
+    padding-top: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.footer {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: fit-content;
+    font-size: 20px;
+    color: #f1f3f3;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+}
+
+a {
+    text-decoration:#abf1f1; 
+}
+a:hover {
+    text-emphasis: bold;
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: #f1f3f3;
+    color: #dfe9f0;
+}
+.nav-link {
+    color: aliceblue;
+}
+/* If I want to apply text shadowing, this is an interesting code someone came up with. */
+.outline { 
+text-decoration-style: solid;
+text-shadow:
+    /* Outline 1 */
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,  
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000, 
+    /* Outline 2 is red*/
+    /* -2px -2px 0 #ff0000,
+    /* 2px -2px 0 #ff0000, */
+    /* -2px 2px 0 #ff0000,
+    2px 2px 0 #ff0000,  
+    -3px 0 0 #ff0000,
+    3px 0 0 #ff0000,
+    0 3px 0 #ff0000,
+    0 -3px 0 #ff0000;  */
+    /* Terminate with a semi-colon */ 
+}
+.float{
+    /* For making containers float */
+    float: left;
+}
+/* img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  } */
+.rightcolumn {
+    float: right;
+    width: 45%;
+    padding: 5px;
+    padding-top: 0px;
+  }
+  .column {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    padding-top: 0px;
+  }
+  /* Clear floats after image containers */
+  .row::after {
+    /* content: ""; */
+    clear: both;
+    display: table;
+  }
+  .labels {
+    size: 15 px;
+    margin: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    text-emphasis: none;
+  }
+  .labels::after {
+    padding: 5px;
+  }
+  .subfooter {
+      position: absolute;
+      bottom: 0px;
+      height: fit-content;
+  }
+/* This is a great way to allign boxes for formatting. */
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
